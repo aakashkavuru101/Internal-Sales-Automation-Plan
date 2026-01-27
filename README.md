@@ -599,7 +599,7 @@ IS_FS_MAPPING_SOURCE=database # or google_sheets
 
 ### Documentation
 1. Check the relevant guide in the [Documentation](#documentation) section
-2. Review the [Troubleshooting](#troubleshooting) sections in each guide
+2. Review the Troubleshooting sections in each guide
 3. Check the [FAQ](#faq) below
 
 ### Community Support
