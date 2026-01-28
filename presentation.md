@@ -17,220 +17,305 @@
 
 ## Daily Work for IS Team Members
 
-- **Morning:** Check HubSpot for meetings, manually send reminder emails (30 minutes)
-- **Per Call:** Copy transcript from Miitel, create summary manually, update call logs, sync FS calendars (15-20 minutes per call)
-- **Total:** 2.5-3.5 hours daily on admin tasks
-- **Problems:** Time-consuming, repetitive, error-prone, inconsistent
+Imagine a typical day:
 
-## Impact
-- Only 25% of time spent on actual selling
-- Missed reminders, delayed updates
-- Team burnout from manual work
+- **Morning:** Check meetings in HubSpot, write and send reminder emails by hand (30 minutes)
+- **Each Call:** Listen to call recording, copy notes, write summary, update customer records, add to team calendars (15-20 minutes per call)
+- **Total:** 2.5-3.5 hours every day on boring tasks
+- **Problems:** Takes too long, boring, mistakes happen, different people do it differently
+
+## What happens because of this?
+- Only 25% of time used for real selling work
+- Sometimes forget to send reminders
+- Updates happen late
+- Team feels tired and unhappy
 
 ---
 
 # Why This Automation is Necessary
 
-## Current Challenges
-- **Time Waste:** IS team spends 60-70% time on admin tasks instead of selling
-- **Human Errors:** Manual data entry leads to mistakes in summaries and updates
-- **Inconsistency:** Different team members create summaries differently
-- **Delays:** Calendar updates and reminders happen late or not at all
-- **Scalability:** Manual processes don't work well as the team grows
+## What's wrong now?
+- **Waste of Time:** Team spends most time on computer work, not talking to customers
+- **Mistakes:** People make errors when typing summaries or updating calendars
+- **Not the Same:** Each person writes summaries in their own way
+- **Late Updates:** Reminders and calendars get updated slowly or forgotten
+- **Can't Grow:** As team gets bigger, the manual work becomes too much
 
-## Business Impact
-- Reduced productivity and sales capacity
-- Poor customer experience from missed communications
-- High team stress and turnover risk
-- Can't handle more calls or meetings efficiently
+## What happens if we don't fix this?
+- Team can't do more sales calls
+- Customers get bad service (missed reminders)
+- People feel stressed and want to quit
+- Business doesn't grow
 
 ---
 
 # What We Aim to Change
 
 ## Our Goals
-- **Save Time:** Reduce admin work from 3.5 hours to 10 minutes per day
-- **Improve Quality:** Consistent, accurate summaries and updates
-- **Automate Everything:** No manual reminders, summaries, or calendar sync
-- **Enable Growth:** Handle 50% more calls and meetings
-- **Boost Morale:** Focus on selling and customer relationships
+- **Save Time:** Cut boring work from 3.5 hours to 10 minutes per day
+- **Better Work:** Summaries and updates are always correct and look the same
+- **No Manual Work:** Everything happens automatically - no typing or copying needed
+- **Do More:** Handle 50% more calls and meetings
+- **Happy Team:** Focus on fun selling work, less stress
 
 ## What We Bring
-- **Zapier Automation:** Connects HubSpot, Miitel, Google Calendar, Gmail
-- **AI Summaries:** Smart summaries using OpenAI (no coding needed)
-- **Real-Time Sync:** Instant updates across all systems
-- **Easy Setup:** 2-4 weeks to implement, low cost (~$600/year)
+- **Zapier Tool:** Connects our tools (HubSpot, Miitel, Google Calendar, Gmail) together
+- **Smart AI:** Writes summaries for us (uses OpenAI, no coding needed)
+- **Instant Updates:** Everything syncs right away
+- **Easy to Start:** Takes 2-4 weeks, costs about $600 per year
+
+---
+
+# What is Zapier? (Simple Explanation)
+
+Zapier is like a robot assistant that connects different apps.
+
+**Example:**
+- When something happens in HubSpot (like a new meeting)
+- Zapier notices it
+- Then it does tasks in other apps (like sending email or updating calendar)
+
+No coding needed - just click and connect!
 
 ---
 
 # Flow of the Automation Process
 
 ## Overview
-Automation uses Zapier to connect tools and automate three main processes:
-1. Meeting Reminders
-2. Call Summaries
-3. Calendar Sync
+We use Zapier to automate 3 main tasks:
+1. Meeting Reminders (send emails automatically)
+2. Call Summaries (write notes automatically)
+3. Calendar Sync (update team calendars automatically)
 
-All triggered automatically - no manual work needed!
+Everything starts automatically - you don't do anything!
 
 ---
 
 ## Meeting Reminder Flow
 
 ```
-1. Meeting Created in HubSpot
+1. 📅 Meeting Created in HubSpot
        ↓
-2. Zapier Detects New Meeting
+2. 🤖 Zapier Sees New Meeting
        ↓
-3. Wait 24 Hours Before Meeting
+3. ⏰ Wait 24 Hours Before Meeting
        ↓
-4. Send Reminder Email to All Attendees
+4. 📧 Send Friendly Reminder Email to Everyone
        ↓
-5. Wait 1 Hour Before Meeting
+5. ⏰ Wait 1 Hour Before Meeting
        ↓
-6. Send Urgent Reminder Email
+6. 📧 Send "Starting Soon" Email
        ↓
-7. Log Activity (Done!)
+7. ✅ Done! (Logged)
 ```
 
-**Time Saved:** 30 minutes/day
-**Benefit:** Never miss reminders, professional and timely
+**Time Saved:** 30 minutes per day
+**Good Thing:** No missed reminders, looks professional
 
 ---
 
 ## Call Summary Flow
 
 ```
-1. Call Recorded in Miitel
+1. 📞 Call Recorded in Miitel
        ↓
-2. Zapier Detects Call Completion
+2. 🤖 Zapier Notices Call is Done
        ↓
-3. Fetch Transcript from Miitel
+3. 📄 Get the Call Notes (Transcript)
        ↓
-4. Send to AI (OpenAI) for Analysis
+4. 🧠 Send to AI for Smart Reading
        ↓
-5. Generate Smart Summary
+5. ✍️ AI Writes a Nice Summary
        ↓
-6. Update HubSpot Call Log
+6. 📝 Add Summary to HubSpot Customer Record
        ↓
-7. Update FS Rep's Google Calendar
+7. 📅 Add Summary to Team Calendar
        ↓
-8. Notify IS Team Member (Optional)
+8. 📧 Tell IS Person (if they want)
        ↓
-9. Log Activity (Done!)
+9. ✅ Done! (Logged)
 ```
 
 **Time Saved:** 15-20 minutes per call
-**Benefit:** Instant summaries, always accurate and formatted
+**Good Thing:** Fast summaries, always correct format
 
 ---
 
 ## Calendar Sync Flow
 
 ```
-1. Meeting Created in HubSpot
+1. 📅 Meeting Created in HubSpot
        ↓
-2. Zapier Detects New Meeting
+2. 🤖 Zapier Sees New Meeting
        ↓
-3. Look Up IS-FS Team Mapping
+3. 👥 Find Which Team Member Should Go
        ↓
-4. Create Event in FS Rep's Calendar
+4. 📅 Add Meeting to Their Google Calendar
        ↓
-5. Add Customer and Meeting Details
+5. ➕ Add Customer Info and Notes
        ↓
-6. Update HubSpot with Calendar Link
+6. 🔗 Add Calendar Link Back to HubSpot
        ↓
-7. Log Activity (Done!)
+7. ✅ Done! (Logged)
 ```
 
 **Time Saved:** 12-15 minutes per meeting
-**Benefit:** FS reps always have updated calendars, no conflicts
+**Good Thing:** Team always knows about meetings, no double bookings
 
 ---
 
 ## Complete Automation Timeline
 
+### Day 1: Meeting Scheduled
 ```
-Day 1: Meeting Scheduled
-├── Zapier syncs to FS calendar (instant)
-├── 24h reminder scheduled
-└── 1h reminder scheduled
+📅 Meeting goes in HubSpot
+├── 🤖 Zapier adds to team calendar (right away)
+├── ⏰ Sets up 24h reminder
+└── ⏰ Sets up 1h reminder
+```
 
-Meeting Day:
-├── 24h before: Reminder email sent
-├── 1h before: Urgent reminder sent
-├── After call: Summary auto-generated
-└── All systems updated automatically
+### Meeting Day:
 ```
+├── 24h before: 📧 Reminder email sent
+├── 1h before: 📧 "Starting soon" email sent
+├── After call: ✍️ Summary written automatically
+└── Everything updated in all systems
+```
+
+No work for you! 🎉
+
+---
+
+## Visual: Before vs After
+
+### Before (Manual Work)
+```
+👤 Check HubSpot → 👤 Write email → 👤 Send reminder
+👤 Copy transcript → 👤 Write summary → 👤 Update records
+👤 Add to calendar → 👤 Check again → 😓 Tired
+```
+
+### After (Automation)
+```
+🤖 Zapier watches HubSpot → 📧 Auto-send emails
+🤖 Gets transcript → 🧠 AI writes summary → ✅ Auto-update
+🤖 Syncs calendars → ✅ Done instantly → 😊 Happy team
+```
+
+---
+
+## Sample Reminder Email
+
+**Subject:** Friendly reminder: Our meeting tomorrow
+
+**Hi [Name],**
+
+Just a quick note about our meeting tomorrow:
+
+- **When:** [Date] at [Time]
+- **Where:** [Location/Link]
+- **What:** [Meeting topic]
+
+Looking forward to talking with you!
+
+Best,
+Internal Sales Team
+
+*(This email is sent automatically - no typing needed!)*
+
+---
+
+## Sample Call Summary
+
+**Call Summary - AI Generated**
+
+**Key Points:**
+- Customer interested in our product
+- Budget available: $50,000
+- Decision in 2 weeks
+
+**Next Steps:**
+- Send proposal this week
+- Schedule demo next Tuesday
+- Follow up with IT team
+
+**Sentiment:** Positive 😊
+
+*(Always looks the same, no mistakes!)*
 
 ---
 
 # Benefits
 
-## For IS Team
-- **3+ hours saved daily** for selling
-- **Zero manual work** on reminders and summaries
-- **Better focus** on customer relationships
-- **Less stress** from repetitive tasks
+## For IS Team (Internal Sales)
+- **Save 3+ hours every day** - more time for selling!
+- **No more typing** reminders or summaries
+- **Focus on customers** and building relationships
+- **Less stress** - no boring repetitive work
 
-## For FS Team
-- **Always updated calendars** with meeting details
-- **Instant access** to call summaries
-- **Better preparation** for customer meetings
+## For FS Team (Field Sales)
+- **Calendars always updated** with meeting details
+- **Get summaries right away** after calls
+- **Prepare better** for customer meetings
+- **No surprises** - know everything in advance
 
 ## For Business
-- **50% more calls/meetings** capacity
-- **Consistent quality** across all processes
-- **ROI: 7,000%** (cost $600/year, saves $225,000/year)
-- **Scalable** as team grows
+- **Do 50% more work** - more calls and meetings
+- **Same quality** every time, no mistakes
+- **Big savings** - costs $600/year, saves lots of money
+- **Grow bigger** - works even with more people
 
 ---
 
 # Implementation
 
-## Quick Start (Zapier)
-1. Sign up for Zapier Professional ($49/month)
-2. Connect HubSpot, Gmail, Google Calendar
-3. Build 4 simple Zaps (meeting reminders, summary, calendar sync)
-4. Test and activate
+## How to Start (Zapier)
+1. Sign up for Zapier Pro ($49/month) - easy!
+2. Connect our apps: HubSpot, Gmail, Google Calendar
+3. Build 4 simple "Zaps" (like recipes):
+   - Meeting reminder Zap
+   - Call summary Zap
+   - Calendar sync Zap
+   - One more for logging
+4. Test it works
 5. Done in 2 hours!
 
 ## Timeline
-- **Week 1-2:** Setup and first automation (meeting reminders)
-- **Week 3-4:** Add call summaries and calendar sync
-- **Ongoing:** Monitor and optimize
+- **Week 1-2:** Set up, start with meeting reminders
+- **Week 3-4:** Add summaries and calendar sync
+- **After:** Watch it work, make small fixes
 
 ---
 
 # Next Steps
 
 ## For Team
-- Review this presentation and ask questions
-- Participate in training sessions
-- Test the automations during pilot phase
-- Provide feedback for improvements
+- Watch this presentation
+- Ask questions if confused
+- Try the automation in testing
+- Tell us what you think
 
 ## For Management
-- Approve Zapier subscription and API access
-- Schedule implementation kickoff
-- Monitor metrics and ROI
+- OK the Zapier account and connections
+- Plan when to start
+- Watch how much time we save
 
-## Success Metrics
-- Time saved tracking
-- Reminder delivery rate (target: 100%)
-- Summary accuracy (target: 99%)
-- Team satisfaction survey
+## How to Measure Success
+- Count hours saved each day
+- Check if reminders are sent (should be 100%)
+- See if summaries are good (99% correct)
+- Ask team if they like it
 
 ---
 
 # Q&A
 
-Questions?
+Any questions?
 
 ---
 
 # Thank You!
 
-Questions or feedback welcome.
+Thanks for listening.
 
-Next: Japanese version after approval.
+Next: Japanese version after you say OK.
