@@ -267,25 +267,137 @@ Internal Sales Team
 
 ---
 
-# Implementation
+# Example Flow with Test Data
 
-## How to Start (Zapier)
-1. Sign up for Zapier Pro ($49/month) - easy!
-2. Connect our apps: HubSpot, Gmail, Google Calendar
-3. Build 4 simple "Zaps" (like recipes):
-   - Meeting reminder Zap
-   - Call summary Zap
-   - Calendar sync Zap
-   - One more for logging
-4. Test it works
-5. Done in 2 hours!
+## Step-by-Step Example: Meeting Automation
 
-## Timeline
-- **Week 1-2:** Set up, start with meeting reminders
-- **Week 3-4:** Add summaries and calendar sync
-- **After:** Watch it work, make small fixes
+**Sample Data:**
+- **Meeting:** Product Demo with Acme Corp
+- **Date/Time:** January 30, 2026 at 2:00 PM
+- **People:** John (IS), Jane (FS), Bob (Customer)
+- **Location:** Zoom Link
+
+### Visual Flow:
+
+```
+📅 HubSpot: New Meeting "Product Demo with Acme Corp"
+       │
+       │ (Zapier detects it instantly)
+       ▼
+🤖 Zapier: "Hey, new meeting! Let's automate!"
+       │
+       ├─► 📧 Schedule 24h Reminder: January 29, 2:00 PM
+       │     (Email to John, Jane, Bob)
+       │
+       ├─► 📧 Schedule 1h Reminder: January 30, 1:00 PM
+       │     (Email to John, Jane, Bob)
+       │
+       └─► 📅 Add to Jane's Google Calendar
+             (FS rep for this customer)
+
+January 29, 2:00 PM:
+📧 Email Sent: "Reminder: Meeting tomorrow at 2 PM"
+
+January 30, 1:00 PM:
+📧 Email Sent: "Meeting starts in 1 hour!"
+
+January 30, 2:00 PM:
+Meeting happens → Call recorded in Miitel
+```
 
 ---
+
+## Step-by-Step Example: Call Summary Automation
+
+**Sample Data:**
+- **Call:** Discovery call with Bob from Acme Corp
+- **Duration:** 45 minutes
+- **Transcript Sample:** "Hi Bob, interested in our CRM? ... Yes, budget $50K ... Timeline 2 weeks"
+
+### Visual Flow:
+
+```
+📞 Miitel: Call ends, recording saved
+       │
+       │ (Zapier checks every 15 min)
+       ▼
+🤖 Zapier: "Call finished! Time for summary!"
+       │
+       ├─► 📄 Fetch Transcript from Miitel API
+       │     (Gets full conversation text)
+       │
+       ├─► 🧠 Send to OpenAI GPT-4
+       │     Prompt: "Summarize this sales call..."
+       │
+       ├─► ✍️ AI Generates Summary:
+       │     "Key Points: Customer interested, $50K budget
+       │      Next Steps: Send proposal, schedule demo
+       │      Sentiment: Positive"
+       │
+       ├─► 📝 Update HubSpot Deal:
+       │     Add summary to Bob's contact notes
+       │
+       ├─► 📅 Update Jane's Calendar:
+       │     Add summary to meeting event
+       │
+       └─► 📧 Notify John (IS):
+             "Summary ready for Acme Corp call"
+```
+
+---
+
+## Complete Example Timeline
+
+### Day 1: Setup Meeting
+```
+2:00 PM: John creates meeting in HubSpot
+         ├── 🤖 Zapier sees it → Schedules reminders
+         ├── 📅 Jane gets calendar event instantly
+         └── ⏰ Reminders set for tomorrow
+```
+
+### Day 2: Meeting Day
+```
+1:00 PM: 📧 "Starting in 1 hour" email sent to all
+2:00 PM: Meeting with Bob from Acme Corp
+         ├── Call recorded in Miitel
+         └── Meeting ends
+```
+
+### Day 2: After Meeting
+```
+2:45 PM: 🤖 Zapier detects call completion
+         ├── Gets transcript
+         ├── AI writes summary
+         ├── Updates HubSpot
+         ├── Updates calendar
+         └── Notifies John
+```
+
+**Result:** Everything done automatically in 30 seconds!
+
+---
+
+## Visual Comparison: Manual vs Automated
+
+### Manual Way (Takes 30+ minutes):
+```
+👤 John: Check HubSpot → Find meeting → Write email → Send reminder
+👤 John: Wait for call → Open Miitel → Copy transcript → Write summary
+👤 John: Open HubSpot → Paste summary → Open calendar → Add notes
+👤 Jane: Check if calendar updated → Ask John if needed
+```
+
+### Automated Way (Takes 0 minutes):
+```
+🤖 Zapier: Watches HubSpot → Sends reminders automatically
+🤖 Zapier: Watches Miitel → Gets transcript → AI summarizes
+🤖 Zapier: Updates HubSpot and calendar instantly
+👤 John: Gets notification "Summary ready!"
+👤 Jane: Sees updated calendar and summary
+```
+
+**Difference:** From 30+ minutes to 0 minutes! 🎉
 
 # Next Steps
 
